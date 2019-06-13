@@ -1,0 +1,100 @@
+/*
+Reglas
+selectores
+declaraciones
+propiedades
+valores
+*/
+header {
+    background:black; color: aqua;
+}
+
+/*
+selectores:
+selector de etiqueta: -ej: header , section , article , etc
+selector desendente: -ej : body header div nav ol li a {}
+selector de clase: - .
+ej: .link
+selector de id:#
+ej: #portafolio 
+*/
+/*
+declaraciones:
+todo lo que esta adentro de las llaves y se separa por un ;
+
+*/
+
+body {
+    margin: 0px;
+    font-family:"Permanent Marker";
+    background: steelblue;
+    }
+h1 {
+    font-family: 'Luckiest Guy';
+    margin: 10px;
+    padding: 41px ;
+}
+
+h1 {
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: 100;
+    /*font-stile: es para poner en cursiva negrita etc*/
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    text-decoration: underline ;
+    /*margin: top , right , bottom , left;*/
+    margin: 0px 0px;
+}
+h1 strong {
+    color:aqua;
+}
+.hero{
+    height: 300px;
+    background-image: url("../images/frannck.jpg");
+    background-color: steelblue;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+
+.project {
+    /*border-top: 10px solid aqua;
+    border-right: 10px solid aqua ;
+    border-left: 10px solid aqua;
+    border-bottom: 10px solid aqua;*/
+   /* border-color: aqua;
+    border-width: 3px ;
+    border-style: groove;*/
+    border: 5px solid aqua;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px ;
+    padding: 20px;
+    background: white;
+    background: steelblue;
+    margin-top: 0px;
+
+}
+.project-details{
+width: 500px;
+}
+.project-imageContainer {
+    width: 500px;
+    height: px;
+   
+}
+
+.header {
+    background-color:steelblue ;
+    color:rgb(1, 24, 24);
+
+}
+.header a {
+    color:aqua;
+    text-decoration: none
+}
+ol {
+    margin: 0px;
+}
