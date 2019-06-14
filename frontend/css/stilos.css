@@ -23,7 +23,21 @@ declaraciones:
 todo lo que esta adentro de las llaves y se separa por un ;
 
 */
+.flexbox{
+    display: flex;
+    /*flex-direction: column; */
+    flex-wrap: wrap
+    /*flex-wrap:nowrap;*/
 
+}
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border: 1px solid orange;
+
+    flex-shrink: 0 ;
+}
 body {
     margin: 0px;
     font-family:"Permanent Marker";
@@ -36,8 +50,8 @@ h1 {
 }
 
 h1 {
-    line-height: 40px;
     font-size: 40px;
+    line-height: 40px;
     font-weight: 100;
     /*font-stile: es para poner en cursiva negrita etc*/
     letter-spacing: 5px;
@@ -56,6 +70,15 @@ h1 strong {
     background-size: 300px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+    display: flex ;
+    align-items: center;
+
 }
 
 
@@ -67,34 +90,109 @@ h1 strong {
    /* border-color: aqua;
     border-width: 3px ;
     border-style: groove;*/
-    border: 5px solid aqua;
+    border: 1px solid aqua;
     border-radius: 10px;
-    margin: 10px;
-    margin-bottom: 15px ;
+    margin: 22px;
+    margin-bottom: 0px ;
     padding: 20px;
     background: white;
     background: steelblue;
     margin-top: 0px;
+    display: inline-block;
+    width: 966px;
+    display: flex;
 
 }
-.project-details{
-width: 500px;
+.portfolio{
+    padding: 20px;
+}
+h2{
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 .project-imageContainer {
-    width: 500px;
-    height: px;
+    height: 280px;
+    display: flex;
+    justify-content: flex-end;
+   
    
 }
 
 .header {
     background-color:steelblue ;
     color:rgb(1, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
 
 }
 .header a {
     color:aqua;
-    text-decoration: none
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0px 10px;
+    
+    
 }
-ol {
+ol,
+ul{
     margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+figure {
+    margin: 15px;
+}
+
+}
+.project{
+    display: flex;
+}
+.header ol {
+    display: flex;
+    height: inherit;
+    height:inherit ;
+}
+.header ol li {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    height: inherit;
+}
+.footer{
+    background: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img {
+    vertical-align: middle;
+}
+.footer a {
+    color: white;
+}
+.event {
+    border: 1px solid black;
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.event-list{
+display: flex;
+}
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+.event-detail{
+    margin: 20px;
 }
